@@ -1,7 +1,7 @@
 import React from 'react';
-import "./index.css";
+// import "./index.css";
 import Home from './routes/Home'
-import ListTutors from './routes/ListTutors'
+import TutorDirectory from './routes/TutorDirectory'
 import InfoTutor from './routes/InfoTutor'
 import MySchedule from './routes/MySchedule'
 import ReserveTutor from './routes/ReserveTutor'
@@ -17,7 +17,7 @@ function App() {
     <>
     <Routes>
       <Route path="/" element={<Home/>}/>
-      <Route path="/listtutors" element={<ListTutors/>}/>
+      <Route path="/tutor-directory" element={<TutorDirectory/>}/>
       <Route path="/infotutor" element={<InfoTutor/>}/>
       <Route path="/myschedule" element={<MySchedule/>}/>
       <Route path="/reservetutor" element={<ReserveTutor/>}/>
