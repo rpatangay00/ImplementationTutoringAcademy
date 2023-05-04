@@ -1,0 +1,136 @@
+body {
+    background: linear-gradient(60deg, #7ec4f5, #4a7ad4, #764ba2, #2a2a2a);
+    background-size: 800% 800%;
+    animation: gradient 15s ease infinite;
+    font-family: Arial, sans-serif;
+  }
+  
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  .logo {
+    position: fixed;
+    top: 0px;
+    left: -40px;
+    width: 50px !important; /* adjust as needed */
+    height: 50px !important; /* adjust as needed */
+    max-width: 50%;
+    max-height: 50%;
+  }
+  
+  .SignupPage {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
+    margin: 0 auto;
+    max-width: 600px;
+    text-align: center;
+  }
+  
+  h1 {
+    color: #4c4c4c;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #4c4c4c;
+  }
+  .testimonials {
+    position: fixed;
+    top: 0;
+    right: 20px;
+    width: 250px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    color: #fff;
+    font-family: Arial, sans-serif;
+  }
+  
+  .testimonial {
+    width: 80%;
+    padding: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+    border: 1px solid #fff;
+  }
+  
+  .testimonial p {
+    font-size: 18px;
+    font-style: italic;
+  }
+  
+  .testimonial .name {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  .testimonials {
+    background-color: none;
+    color: #fff;
+    padding: 20px;
+    margin-top: 50px;
+  }
+  
+  .testimonial-text {
+    font-style: italic;
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  
+  .testimonial-author {
+    font-style: normal;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+    
+  
+  input[type="text"],
+  input[type="number"],
+  input[type="tel"],
+  input[type="email"],
+  input[type="password"],
+  select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #4c4c4c;
+  }
+  
+  button[type="submit"] {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #2980b9;
+  }
+  
+  .error {
+    color: red;
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  
