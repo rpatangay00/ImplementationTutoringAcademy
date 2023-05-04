@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './SignUp2.css';
 
-function SignUp2() {
+function SignUp2Page() {
   const [name, setName] = useState('');
   const [age, setAge] = useState('');
   const [role, setRole] = useState('');
@@ -81,7 +81,7 @@ function SignUp2() {
     <p className="testimonial-text">"I highly recommend this tutoring service. My child's grades have improved significantly since starting lessons!"</p>
     <p className="testimonial-author">- John Smith</p>
   </div> */}
-  <div className="testimonial">
+  {/* <div className="testimonial">
     <p className="testimonial-text">"I am so grateful for the support and guidance of my tutor. They helped me achieve my academic goals and gain confidence in my abilities."</p>
     <p className="testimonial-author">- Emily Johnson</p>
   </div>
@@ -89,9 +89,7 @@ function SignUp2() {
     <p className="testimonial-text">"The tutors are knowledgeable, professional, and really care about their students. I couldn't be happier with the service!"</p>
     <p className="testimonial-author">- Michael Williams</p>
   </div>
-  <div class="logo">
-  <img src="TAlogo.png" alt="Logo"/>
-</div>
+   */}
 
 </div>
 
@@ -102,4 +100,4 @@ function SignUp2() {
   );
 }
 
-export default SignUp2;
+export default SignUp2Page;
