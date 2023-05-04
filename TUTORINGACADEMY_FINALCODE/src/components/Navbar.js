@@ -48,6 +48,12 @@ window.addEventListener("scroll",changeColor)
         <li>
               <Link to="/favorites" style={{ color: '#61B0B7' }}>Favorites</Link>
         </li>  
+        <li>
+              <Link to="/SignUp2" style={{ color: '#61B0B7' }}>Sign Up</Link>
+        </li>  
+        <li>
+              <Link to="/Login2" style={{ color: '#61B0B7' }}>Login</Link>
+        </li> 
         </ul>
         <div className="hamburger" onClick={handleClick}>
             {click ? (<FaTimes size={20} style={{color: "#fff"}} /> ) : 

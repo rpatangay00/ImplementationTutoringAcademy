@@ -9,6 +9,8 @@ import MyFavorites from './routes/MyFavorites';
 
 
 import {Route, Routes} from "react-router-dom"
+import Login2 from './routes/Login2';
+import SignUp2 from './routes/SignUp2';
 
 
 
@@ -22,6 +24,10 @@ function App() {
       <Route path="/myschedule" element={<MySchedule/>}/>
       <Route path="/reservetutor" element={<ReserveTutor/>}/>
       <Route path="/favorites" element={<MyFavorites/>}/>
+      <Route path="/Login2" element={<Login2/>}/>
+      <Route path="/SignUp2" element={<SignUp2/>}/>
+
+
     </Routes>
     </>
   );
