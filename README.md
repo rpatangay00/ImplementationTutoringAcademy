@@ -13,7 +13,7 @@ This is a web application that provides an online tutoring platform where users 
 Total tutoring hours: Both users and tutors can view the total number of tutoring hours completed.
 
 ## Installation Steps
-1. Clone the repository to your local machine using the command git clone https://github.com/your-repository-url.git
+1. Clone the repository to your local machine using the command git clone https://github.com/rpatangay00/ImplentationTutoringACademy.git
 2. Install the necessary dependencies using npm install
 3. Start the server using npm start
 4. Open your web browser and navigate to http://localhost:3000 to view the application.
