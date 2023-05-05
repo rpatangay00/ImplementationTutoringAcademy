@@ -19,3 +19,4 @@ Total tutoring hours: Both users and tutors can view the total number of tutorin
 4. Open your web browser and navigate to http://localhost:3000 to view the application.
 
 
+![](https://github.com/jglovier/gifs/blob/gh-pages/why-you/i-see-what-you-did-there.gif)
