@@ -1,0 +1,43 @@
+/* TutorList.css */
+
+.tutor-list-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 20px;
+    margin-top: 20px;
+    padding: 0 20px;
+  }
+  
+  .tutor-card {
+    background-color: var(--light-black);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    padding: 1rem;
+    width: 200px;
+    color: white;
+  }
+  
+  .tutor-card h3 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .tutor-card p {
+    margin: 5px 0;
+    font-size: 18px;
+  }
+  
+  .favorite-button {
+    cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+  }
+  
+  .favorite-button:hover {
+    background-color: #0056b3;
+  }

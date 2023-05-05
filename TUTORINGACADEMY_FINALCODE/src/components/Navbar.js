@@ -43,6 +43,9 @@ window.addEventListener("scroll",changeColor)
               <Link to="/myschedule" style={{ color: '#61B0B7' }}>My Schedule</Link>
         </li>  
         <li>
+      <Link to="/TutorSignUp" style={{ color: '#61B0B7' }}>Tutor Sign Up</Link>
+      </li>  
+        <li>
               <Link to="/reservetutor" style={{ color: '#61B0B7' }}>Reserve A Tutor</Link>
         </li>  
         <li>

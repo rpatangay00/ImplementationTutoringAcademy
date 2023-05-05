@@ -1,5 +1,9 @@
 import React from "react";
-import  Navbar  from '/Users/rahulsree/ImplentationTutoringACademy/TUTORINGACADEMY_FINALCODE/src/components/Navbar.js'
+import Navbar from '../../Navbar';
+
+
+
+
 
 function Header() {
     return (
