@@ -1,4 +1,4 @@
-# TutoringAcademy
+## Tutoring Academy
 
-The CS 4485 - UTDesign Project is an online tutoring application that includes various features for both users and tutors. The major functionalities of the project include user signup, login, tutor search, adding tutors to a favorite list, tutor signup with subject list, available hours, and profile picture upload, making appointments with tutors, displaying upcoming appointments for both users and tutors, and showing total tutoring hours completed.
+This is a web application that provides an online tutoring platform where users can register as students or tutors. The application allows students to search for tutors based on their area of expertise, schedule appointments with them, and keep track of their tutoring hours. Tutors can sign up, create a profile with their areas of expertise and availability, and manage their appointments and tutoring hours.
 
