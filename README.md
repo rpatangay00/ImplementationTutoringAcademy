@@ -24,3 +24,13 @@ Total tutoring hours: Both users and tutors can view the total number of tutorin
 4. Open your web browser and navigate to http://localhost:3000 to view the application.
 
 
+# Contributors 
+
+This project was created by a team of developers as part of CS 4485 - UTDesign Project. Listed are the contributors:
+
+Rikita Patangay
+Ishan Brar
+Basma Mahamid
+Parsa Zilaee
+Rahul Sreedharan
+Vranda Vijay
