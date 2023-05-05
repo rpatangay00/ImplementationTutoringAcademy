@@ -19,4 +19,4 @@ Total tutoring hours: Both users and tutors can view the total number of tutorin
 4. Open your web browser and navigate to http://localhost:3000 to view the application.
 
 
-![](https://github.com/rpatangay00/ImplentationTutoringACademy/books.gif)
+![](https://github.com/rpatangay00/ImplentationTutoringACademy/main/books.gif)
