@@ -1,6 +1,4 @@
 import React, {useState, useMemo, useEffect} from "react";
-// import {ExpandedTutorCard} from "./ExpandedTutorCard.js"
-// import ExpandedTutorCard from "./ExpandedTutorCard.js";
 import Button from '@mui/material/Button';
 import Dialog from '@mui/material/Dialog';
 import DialogActions from '@mui/material/DialogActions';
@@ -99,10 +97,12 @@ if(loading) {
               <DialogContentText >
                 <strong>Level: </strong> {props.grade} <br/>
                 <strong>Subject(s): </strong> {subjectsList}
-
-                <p> </p>
+                <div>&nbsp;</div>
                 <strong>Availability: </strong> &nbsp; <DenseTable tutorDetails={tutorDetails}/>
+                <div>&nbsp;</div>
                 <strong>Ratings: </strong> &nbsp; <RatingsTable tutorDetails={tutorDetails}/>
+                <div>&nbsp;</div>
+                <strong>Total Hours: </strong> 108 {tutorDetails.data.TotalHours}&nbsp; 
                 {/* <strong>Alternative Subject: </strong> {JSON.stringify(tutorDetails.data.subjects[0].subject)} <br/> */}
               </DialogContentText>
             </DialogContent>
