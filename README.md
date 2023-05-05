@@ -28,9 +28,9 @@ Total tutoring hours: Both users and tutors can view the total number of tutorin
 
 This project was created by a team of developers as part of CS 4485 - UTDesign Project. Listed are the contributors:
 
-Rikita Patangay
-Ishan Brar
-Basma Mahamid
-Parsa Zilaee
-Rahul Sreedharan
-Vranda Vijay
+* Rikita Patangay
+* Ishan Brar
+* Basma Mahamid
+* Parsa Zilaee
+* Rahul Sreedharan
+* Vranda Vijay
