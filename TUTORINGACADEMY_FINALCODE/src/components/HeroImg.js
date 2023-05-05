@@ -15,7 +15,7 @@ const heroImg = () => {
       </div>
       <div className="content">
          <p>Welcome to Tutoring Academy</p> 
-         <h1>Reserve a tutor now.</h1>
+         <h1 className='text-gray-200'>Reserve a tutor now.</h1>
          <div>
             <Link to ="/reservetutor" className="btn btn-light">Book Now</Link> 
          </div>

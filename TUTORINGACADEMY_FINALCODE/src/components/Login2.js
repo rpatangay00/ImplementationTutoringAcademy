@@ -22,14 +22,15 @@ function Login2Page() {
       return;
     }
 
-    // TODO: Send login request to server
+    
     setSuccess(true);
-    window.location.reload(); // Refresh page after successful login
+    window.location.reload();
 
   };
 
   return (
     <div className="LoginPage">
+      <div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div>
       {success ? (
         <div>
           <h1>Login successful!</h1>
@@ -37,20 +38,20 @@ function Login2Page() {
         </div>
       ) : (
         <div>
-          <h1>Tutoring Academy Student Login</h1>
+          <h1 className='text-gray-200'>Tutoring Academy Student Login</h1>
           {error && <p className="error">{error}</p>}
           <form onSubmit={handleSubmit}>
-            <label>
+            <label className='text-gray-200'>
               Email:
               <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
             </label>
-            <label>
+            <label className='text-gray-200'>
               Password:
               <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} />
             </label>
             <button type="submit">Login</button>
           </form>
-          <a href="/forgot">Forgot Email/Password?</a>
+          &nbsp;&nbsp;&nbsp;&nbsp;<a href="/forgot" className='text-gray-200'>Forgot Email/Password?</a>
         </div>
       )}
     </div>
