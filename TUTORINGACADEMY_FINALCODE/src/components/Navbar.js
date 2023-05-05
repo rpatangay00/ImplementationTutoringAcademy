@@ -28,6 +28,7 @@ window.addEventListener("scroll",changeColor)
          <img style={{ width: 100, height: 100 }} src={"./TAlogo.png"} alt="React Logo" />
       </div>
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <div style={{ color: '#FFFFFF', fontSize: 20 }}> User: Bob Miller [Student]  </div>
         <ul className={click ? "nav-menu active" : "nav-menu"}>
           <li>
               <Link to="/" style={{ color: '#61B0B7' }}>Home</Link>
@@ -48,12 +49,13 @@ window.addEventListener("scroll",changeColor)
         <li>
               <Link to="/favorites" style={{ color: '#61B0B7' }}>Favorites</Link>
         </li>  
-        <li>
+        {/* <li>
               <Link to="/SignUp2" style={{ color: '#61B0B7' }}>Sign Up</Link>
         </li>  
         <li>
               <Link to="/Login2" style={{ color: '#61B0B7' }}>Login</Link>
-        </li> 
+        </li>  */}
+        
         </ul>
         <div className="hamburger" onClick={handleClick}>
             {click ? (<FaTimes size={20} style={{color: "#fff"}} /> ) : 
