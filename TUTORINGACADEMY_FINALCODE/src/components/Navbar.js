@@ -33,12 +33,12 @@ window.addEventListener("scroll",changeColor)
               <Link to="/" style={{ color: '#61B0B7' }}>Home</Link>
         </li>  
         <li>
-              <Link to="/infotutor" style={{ color: '#61B0B7' }}>Info Tutor</Link>
-        </li>  
-        <li>
               <Link to="/tutor-directory" style={{ color: '#61B0B7' }}>Tutor Directory</Link>
         </li>  
          
+        <li>
+              <Link to="/tutorschedule" style={{ color: '#61B0B7' }}>Tutor Schedule</Link>
+        </li>  
         <li>
               <Link to="/myschedule" style={{ color: '#61B0B7' }}>My Schedule</Link>
         </li>  

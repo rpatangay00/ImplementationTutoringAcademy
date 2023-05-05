@@ -5,14 +5,9 @@ import Layout from "../components/TutorDirectory/components/Layout";
 import Header from "../components/TutorDirectory/components/Header";
 import Navigation from "../components/TutorDirectory/components/Navigation";
 import TutorCardList from "../components/TutorDirectory/components/TutorCardList.js";
-import Footer from "../components/TutorDirectory/components/Footer";
+import Footer from "../components/Footer";
 import axios from 'axios';
-import { useTheme } from '@mui/material/styles';
-import OutlinedInput from '@mui/material/OutlinedInput';
-import InputLabel from '@mui/material/InputLabel';
-import MenuItem from '@mui/material/MenuItem';
-import FormControl from '@mui/material/FormControl';
-import Select from '@mui/material/Select';
+
 import '../components/TutorDirectory/assets/main.css';
 
 function TutorDirectory() {

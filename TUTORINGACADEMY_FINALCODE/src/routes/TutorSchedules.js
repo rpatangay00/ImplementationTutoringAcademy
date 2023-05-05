@@ -1,18 +1,17 @@
 import React from 'react'
 import  Navbar  from '../components/Navbar'
 import Footer from '../components/Footer'
-import ScheduleStudent from '../components/MyScheduleScr'
+import ScheduleTutor from '../components/TutorSchedule'
 
 
-
-const MySchedule = () => {
+const TutorSchedules = () => {
   return (
     <div>
       <Navbar/>
-<ScheduleStudent/>
+  <ScheduleTutor/>
       <Footer/>
     </div>
   )
 }
 
-export default MySchedule
+export default TutorSchedules

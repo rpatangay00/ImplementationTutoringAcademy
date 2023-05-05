@@ -5,7 +5,7 @@ const images = [
   {
     id: 1,
     url:
-      "https://www.shutterstock.com/image-photo/young-students-campus-helps-friend-260nw-655037578.jpg",
+      "https://media.gettyimages.com/id/879751676/photo/some-coffee-for-a-late-night-shift.jpg?s=612x612&w=0&k=20&c=3fGMo-LXTWkOzuwNZCAwJCsJ37w9JA2hD-KUxd_s97A=",
     alt: "Image 1",
     caption: "Reach out to our variety of tutors and your fellow students versed in a wide range of subjects. They are all willing to use their experience from the same classes you are struggling with to help you through your rough patch and understand any material you are struggling with.",
   },
