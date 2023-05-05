@@ -34,27 +34,30 @@ window.addEventListener("scroll",changeColor)
               <Link to="/" style={{ color: '#61B0B7' }}>Home</Link>
         </li>  
         <li>
-              <Link to="/infotutor" style={{ color: '#61B0B7' }}>Info Tutor</Link>
-        </li>  
-        <li>
               <Link to="/tutor-directory" style={{ color: '#61B0B7' }}>Tutor Directory</Link>
         </li>  
          
         <li>
+              <Link to="/tutorschedule" style={{ color: '#61B0B7' }}>Tutor Schedule</Link>
+        </li>  
+        <li>
               <Link to="/myschedule" style={{ color: '#61B0B7' }}>My Schedule</Link>
         </li>  
+        {/* <li>
+      <Link to="/TutorSignUp" style={{ color: '#61B0B7' }}>Tutor Sign Up</Link>
+      </li>   */}
         <li>
               <Link to="/reservetutor" style={{ color: '#61B0B7' }}>Reserve A Tutor</Link>
         </li>  
         <li>
               <Link to="/favorites" style={{ color: '#61B0B7' }}>Favorites</Link>
         </li>  
-        {/* <li>
+        <li>
               <Link to="/SignUp2" style={{ color: '#61B0B7' }}>Sign Up</Link>
         </li>  
         <li>
               <Link to="/Login2" style={{ color: '#61B0B7' }}>Login</Link>
-        </li>  */}
+        </li> 
         
         </ul>
         <div className="hamburger" onClick={handleClick}>

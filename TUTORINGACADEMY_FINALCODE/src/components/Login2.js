@@ -38,7 +38,7 @@ function Login2Page() {
         </div>
       ) : (
         <div>
-          <h1 className='text-gray-200'>Tutoring Academy Student Login</h1>
+          <h1 className='text-gray-200'>Login</h1>
           {error && <p className="error">{error}</p>}
           <form onSubmit={handleSubmit}>
             <label className='text-gray-200'>

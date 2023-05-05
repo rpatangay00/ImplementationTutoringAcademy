@@ -8,6 +8,7 @@ const ReserveTutor = () => {
     <div>
       <Navbar/>
       <ReserveTutorPage/>
+      <div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div>
       <Footer/>
       
    
