@@ -95,6 +95,7 @@ if(loading) {
             <DialogTitle>{props.firstName + " " + props.lastName}</DialogTitle>
             <DialogContent>
               <DialogContentText >
+                <strong>Tutor ID: </strong> {props.tutorID} <br/>
                 <strong>Level: </strong> {props.grade} <br/>
                 <strong>Subject(s): </strong> {subjectsList}
                 <div>&nbsp;</div>

@@ -59,14 +59,14 @@ function ReserveTutorPage() {
         <label htmlFor="student_id">Student ID:</label>
         <input type="number" id="student_id" name="student_id" value={formData.student_id} onChange={handleInputChange} required />
 
-        <label htmlFor="date">Date:</label>
-        <input type="date" id="date" name="date" value={formData.date} onChange={handleInputChange} required />
+        <label htmlFor="date" className="text-gray-200">Date:</label>
+        <input type="date" id="date" name="date" value={formData.date} onChange={handleInputChange} required className="text-gray-800"/>
 
         <label htmlFor="subject_id">Subject ID:</label>
-        <input type="number" id="subject_id" name="subject_id" value={formData.subject_id} onChange={handleInputChange} required />
+        <input type="number" id="subject_id" name="subject_id" value={formData.subject_id} onChange={handleInputChange} required className="text-gray-800"/>
 
         <label htmlFor="time">Time:</label>
-        <input type="time" id="time" name="time" value={formData.time} onChange={handleInputChange} required />
+        <input type="time" id="time" name="time" value={formData.time} onChange={handleInputChange} required className="text-gray-800"/>
 
         <label htmlFor="duration">Duration (hours):</label>
         <input type="number" id="duration" name="duration" value={formData.duration} onChange={handleInputChange} required />
