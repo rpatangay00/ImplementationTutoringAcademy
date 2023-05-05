@@ -11,3 +11,9 @@ This is a web application that provides an online tutoring platform where users 
 * Appointment scheduling: Users can schedule appointments with a tutor of their choice. The application will check the tutor's availability before confirming the appointment.
 * Upcoming appointments: Users and tutors can view a list of upcoming appointments, including the tutor/student name, date, and time information.
 Total tutoring hours: Both users and tutors can view the total number of tutoring hours completed.
+
+## Installation Steps
+1. Clone the repository to your local machine using the command git clone https://github.com/your-repository-url.git
+2. Install the necessary dependencies using npm install
+3. Start the server using npm start
+4. Open your web browser and navigate to http://localhost:3000 to view the application.
