@@ -1,0 +1,45 @@
+import { createRequire } from 'module';
+const require = createRequire(import.meta.url);
+
+const connection = {
+  sql: { rejectUnauthorized: false },
+  host: "tutoring-db.crb1mmtfwyo3.us-east-2.rds.amazonaws.com",
+  user: "admin",
+  password: "Tutoringapp123",
+  database: "onlinetutoring"
+};
+
+const knex = require("knex")({ client: "mysql", connection });
+
+export const handler = async (event) => {
+  const {id} = event;
+  let reservations = [];
+
+  try {
+    reservations = await knex.from("scheduled_lessons").where({appointmentid:id}).select();
+  } catch (err) {
+    console.log("Error connecting to database:", err);
+  }
+
+let res = [];
+for (let reservation of reservations) {
+    const tutors = await knex.from("tutors").where({tutor_id: reservation.tutor_id}).select();
+    const subjects = await knex.from("subjects").where({subject_id: reservation.subject_id}).select();
+    const student = await knex.from("students").where({studentid: reservation.student_id}).select();
+    
+    const tutor = tutors[0];
+    const subject = subjects[0];
+    
+    
+    
+   
+    
+ //   let r= {id:reservation.appointmentid,  date:reservation.date,time:reservation.time, duration:reservation.duration,  tutor: {tutor_first_name:tutor.first_name,tutor_last_name:tutor.last_name}, subject: subject.subject};
+   let r= {id:reservation.appointmentid, date:reservation.date,time:reservation.time,duration:reservation.duration, tutor: {tutor_first_name:tutor.first_name,tutor_last_name:tutor.last_name},  student: {student_first_name:student.first_name,student_last_name:student.last_name}, subject: subject.subject};
+    res.push(r);
+    
+    // reservation = {...reservation, day: day, tutor: tutor, subject: subject}
+  }
+  return res;
+
+};
