@@ -1,0 +1,59 @@
+import { v4 as uuidv4 } from "uuid";
+import { createRequire } from "module";
+const require = createRequire(import.meta.url);
+
+const connection = {
+  sql: { rejectUnauthorized: false },
+  host: "tutoring-db.crb1mmtfwyo3.us-east-2.rds.amazonaws.com",
+  user: "admin",
+  password: "Tutoringapp123",
+  database: "onlinetutoring",
+};
+
+const knex = require("knex")({ client: "mysql", connection });
+
+export const handler = async (event) => {
+
+     console.log("Inputted Event:", event);
+ 
+    
+     
+  console.log("Inputted Event:", event.body);
+  
+  
+  //console.log("GGGGGGGGGGGGGGGGGGGGGGGGGGGGG+++++++++++++++++")
+
+  
+  const reservation = JSON.parse(event.body);    
+//   const reservation = event.body
+ 
+
+
+  console.log("New log  Reservation:     ", reservation);
+  
+  try {
+      const maxid = await  knex('scheduled_lessons').select(knex.raw(' max( appointmentid)  as maxid'))
+      
+ 
+ 
+    console.log(parseInt(maxid[0].maxid)+1)
+       reservation["appointmentid"]=parseInt(maxid[0].maxid)+1
+ 
+      console.log("Before  Reservation:     ", reservation);
+       
+    await knex("scheduled_lessons").insert(reservation);
+
+    //for (const subjectid of tutorSubjectIDs) {
+  //    await knex("expertise").insert({ tutorid, subjectid });
+ //   }
+  } catch (err) {
+    console.log("Error inserting into database:", err);
+  
+      return {"statusCode": 400, "body": "Error inserting into database:"+ err}
+  }
+
+ return {"statusCode": 200, "body": "success"}
+ 
+ 
+  
+};
