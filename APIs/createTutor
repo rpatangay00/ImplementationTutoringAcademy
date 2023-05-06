@@ -1,0 +1,51 @@
+import { v4 as uuidv4 } from "uuid";
+import { createRequire } from "module";
+const require = createRequire(import.meta.url);
+
+const connection = {
+  sql: { rejectUnauthorized: false },
+  host: "tutoring-db.crb1mmtfwyo3.us-east-2.rds.amazonaws.com",
+  user: "admin",
+  password: "Tutoringapp123",
+  database: "onlinetutoring",
+};
+
+const knex = require("knex")({ client: "mysql", connection });
+
+export const handler = async (event) => {
+  console.log("Inputted Event:", event.body);
+  
+  const tutor = JSON.parse(event.body);  
+
+  //const {body: tutor} = formattedEvent;
+
+  const tutorid = uuidv4();
+  const tutorSubjectIDs = tutor.subjectids;
+  delete tutor.subjectids;
+  tutor["tutor_id"] =  tutorid;
+//  tutor["first_name"] = tutor["body"]["first_name"];
+//  tutor["last_name"] = tutor["body"]["first_name"];
+//  tutor["net_id_fk"] = tutor["body"]["net_id_fk"];
+//  tutor["grade"] = tutor["body"]["grade"];
+//  tutor["mainsubject"] = tutor["body"]["mainsubject"];
+  
+//    delete tutor.body
+   
+
+
+  console.log("New log  Tutor:     ", tutor);
+
+  try {
+    await knex("tutors").insert(tutor);
+
+    for (const subjectid of tutorSubjectIDs) {
+      await knex("expertise").insert({ tutorid, subjectid });
+    }
+  } catch (err) {
+    console.log("Error inserting into database:", err);
+    
+     return {"statusCode": 400, "body": "Error inserting into database:"+ err}
+  }
+
+ return {"statusCode": 200, "body": "success"}
+};
