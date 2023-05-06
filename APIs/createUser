@@ -1,0 +1,46 @@
+import { createRequire } from "module";
+const require = createRequire(import.meta.url);
+
+const connection = {
+  sql: { rejectUnauthorized: false },
+  host: "tutoring-db.crb1mmtfwyo3.us-east-2.rds.amazonaws.com",
+  user: "admin",
+  password: "Tutoringapp123",
+  database: "onlinetutoring",
+};
+
+const knex = require("knex")({ client: "mysql", connection });
+
+export const handler = async (event) => {
+  console.log("Inputted Event:", event.body);
+  
+ // const userid = uuidv4();
+ 
+
+  
+//  const user = event.body;
+  const user = JSON.parse(event.body);  
+//  user["userid"] =  userid;
+
+/*
+  const userid = user.userid;
+  const username = user.username;
+  const password = user.password;
+  const occupation = user.occupation;
+
+    const formattedUser = {
+        userid: userid,
+        username: username,
+        password: password,
+        occupation: occupation
+    }
+*/
+  try {
+    await knex("user").insert(user);
+
+  } catch (err) {
+   return {"statusCode": 400, "body": "Error inserting into database:"+ err}
+  }
+
+ return {"statusCode": 200, "body": "success"}
+};
