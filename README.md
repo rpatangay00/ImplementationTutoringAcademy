@@ -1,6 +1,7 @@
 <p align="center">
-<img src="https://camo.githubusercontent.com/8bf6f6d78abc81fcf9c49f10649423e73ea44bc248e83aaae8759d401c829a84/68747470733a2f2f70687973696373677572756b756c2e66696c65732e776f726470726573732e636f6d2f323031392f30322f6368617261637465722d312e676966" width="400" height="300"/>
+<img src="https://github.com/rpatangay00/ImplentationTutoringACademy/blob/3682b9b762714d7e11be310df88bac34a520edfb/TAlogo.png" width="500" height="500"/>
 </p>
+
 
 
 # Tutoring Academy
@@ -36,6 +37,6 @@ This project was created by a team of developers as part of CS 4485 - UTDesign P
 * Vranda Vijay
 
 <p align="center">
-<img src="https://github.com/rpatangay00/ImplentationTutoringACademy/blob/3682b9b762714d7e11be310df88bac34a520edfb/TAlogo.png" width="500" height="500"/>
+<img src="https://camo.githubusercontent.com/8bf6f6d78abc81fcf9c49f10649423e73ea44bc248e83aaae8759d401c829a84/68747470733a2f2f70687973696373677572756b756c2e66696c65732e776f726470726573732e636f6d2f323031392f30322f6368617261637465722d312e676966" width="400" height="300"/>
 </p>
 
