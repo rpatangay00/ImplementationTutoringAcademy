@@ -103,7 +103,7 @@ if(loading) {
                 <div>&nbsp;</div>
                 <strong>Ratings: </strong> &nbsp; <RatingsTable tutorDetails={tutorDetails}/>
                 <div>&nbsp;</div>
-                <strong>Total Hours: </strong> 108 {tutorDetails.data.TotalHours}&nbsp; 
+                <strong>Total Hours: </strong> {tutorDetails.data.TotalHours}&nbsp; 
                 {/* <strong>Alternative Subject: </strong> {JSON.stringify(tutorDetails.data.subjects[0].subject)} <br/> */}
               </DialogContentText>
             </DialogContent>
