@@ -36,6 +36,6 @@ This project was created by a team of developers as part of CS 4485 - UTDesign P
 * Vranda Vijay
 
 <p align="center">
-<img src="https://github.com/rpatangay00/ImplentationTutoringACademy/blob/3682b9b762714d7e11be310df88bac34a520edfb/TAlogo.png" width="400" height="300"/>
+<img src="https://github.com/rpatangay00/ImplentationTutoringACademy/blob/3682b9b762714d7e11be310df88bac34a520edfb/TAlogo.png" width="500" height="500"/>
 </p>
 
