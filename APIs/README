@@ -1,0 +1,2 @@
+This folder contains each Lambda function written to create the APIs to get/send the information
+to the database. The next step was to deploy and test them using API GateWay, CloudWatch and Postman
