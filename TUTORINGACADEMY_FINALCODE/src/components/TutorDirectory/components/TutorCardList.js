@@ -2,7 +2,7 @@ import React from "react";
 import TutorCard from "./TutorCard.js";
 
 
-function TutorCardList ({ data }) { // another fancy destructuring to avoid typing props.data.map down below
+function TutorCardList ({ data }) {
     
     return (
         data.map(tutor => (
