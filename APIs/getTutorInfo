@@ -1,0 +1,87 @@
+import { createRequire } from 'module';
+const require = createRequire(import.meta.url);
+
+const connection = {
+  sql: { rejectUnauthorized: false },
+  host: "tutoring-db.crb1mmtfwyo3.us-east-2.rds.amazonaws.com",
+  user: "admin",
+  password: "Tutoringapp123",
+  database: "onlinetutoring"
+};
+
+
+const knex = require("knex")({ client: "mysql", connection });
+
+/*
+{
+  id: 200
+}
+*/
+
+export const handler = async (event) => {
+  const {id} = event;
+  let users;
+
+  try {
+    users = await knex.from("getTutorInfo").where({tutor_id: id}).select();
+  } catch (err) {
+    console.log("Error getting user from database:", err);
+  }
+
+  const user = users[0];
+  
+  const expertises = await knex.from("expertise").where({tutorid: user.tutor_id}).select();
+  const totalHrs = await knex.from("totalhrs_tutor").where({tutor_FK1: user.tutor_id}).select();
+  const availability = await knex.from("tutor_availability").where({tutor_FK3: user.tutor_id}).select();
+  const scheduledLessons = await knex.from("scheduled_lessons").where({tutor_id: user.tutor_id}).select();
+  const ratings = await knex.from("tutor_rating").where({tutor_FK4: user.tutor_id}).select();
+
+/*
+  [
+    {
+      tutorid: 2,
+      subjectid: 3
+    },
+    {
+      tutorid:2,
+      subjectid: 
+    }
+  ]
+*/
+
+  const subjects = [];
+  
+  for (const expertise of expertises) {
+    const subjectInfo = await knex.from("subjects").where({subject_id: expertise.subjectid}).select();
+    
+    subjects.push(subjectInfo[0]);
+  }
+
+  totalHrs.forEach((hrs) => {
+    delete hrs["tutor_FK1"];
+  })
+  
+  scheduledLessons.forEach((lesson) => {
+    delete lesson["tutor_fk2"];
+    const studentID = lesson["subject_fk1"];
+    delete lesson["subject_fk1"];
+    
+    lesson["studentID"] = studentID;
+  })
+  
+  for (const aval of availability) {
+    delete aval["tutor_FK3"];
+    
+    const dayName = await knex.from("days").where({day_id: aval.day}).select();
+
+    aval["day"] = dayName[0].day_of_week;
+  }
+  
+  ratings.forEach((rat) => {
+    delete rat["tutor_FK4"];
+  })
+  
+  const formattedUser = {...user, subjects, TutorAvailability: availability, ratings, TotalHours: totalHrs, ScheduledLessons: scheduledLessons};
+
+  return formattedUser;
+};
