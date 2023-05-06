@@ -7,12 +7,8 @@ function ScheduleStudent() {
    
       <div className="schedule-list" align="center">
           <h1>MY SCHEDULE</h1>
-          <p><strong>Current Total Hours of Tutoring Recieved: </strong> 0</p>
+          <p><strong>Current Total Hours of Tutoring Recieved: </strong> </p>
           <div>&nbsp;</div>
-        <p >Martin Smith --- Integral Calculus --- April 25th, 2023, 1:00 PM</p>
-        <p>Layla Arwa --- Integral Calculus --- April 5th, 2023, 5:00 PM</p>
-        <p>Jones White --- Linear Algebra --- May 25th, 2023, 2:00 PM</p>
-        <p>Chloe Ku --- Integral Calculus --- May 7th, 2023, 3:00 PM</p>
       </div>
     </div>
   );
