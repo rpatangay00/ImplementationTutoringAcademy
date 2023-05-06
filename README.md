@@ -1,5 +1,5 @@
 <p align="center">
-<img src="https://github.com/rpatangay00/ImplentationTutoringACademy/blob/3682b9b762714d7e11be310df88bac34a520edfb/TAlogo.png" width="500" height="500"/>
+<img src="https://github.com/rpatangay00/ImplentationTutoringACademy/blob/3682b9b762714d7e11be310df88bac34a520edfb/TAlogo.png" width="200" height="200"/>
 </p>
 
 
