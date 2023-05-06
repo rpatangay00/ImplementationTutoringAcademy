@@ -28,7 +28,6 @@ window.addEventListener("scroll",changeColor)
          <img style={{ width: 100, height: 100 }} src={"./TAlogo.png"} alt="React Logo" />
       </div>
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      <div style={{ color: '#FFFFFF', fontSize: 20 }}> User: Bob Miller [Status: Student] [ID: 1]  </div>
         <ul className={click ? "nav-menu active" : "nav-menu"}>
           <li>
               <Link to="/" style={{ color: '#61B0B7' }}>Home</Link>
